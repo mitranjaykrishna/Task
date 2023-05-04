@@ -30,7 +30,7 @@ import Table from './Table';
     const display=(posts)=>{
         if(!posts.length) return null;
         return posts.map((post)=>{
-            return <Table id={post.id} name={post.name} userName={post.username} address={post.address}
+            return <Table id={post.id} name={post.name} userName={post.username} email={post.email} address={post.address}
             phone={post.phone}          
             website={post.website} />
         })
@@ -46,6 +46,8 @@ import Table from './Table';
           <th>ID</th>
           <th>Name</th>
           <th>userName</th>
+          <th>email</th>
+
           <th>address</th>
           <th>Phone</th>
           <th>Website</th>

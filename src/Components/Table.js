@@ -9,6 +9,7 @@ const Table = (props) => {
         <td>{props.id}</td>
         <td>{props.name}</td>
         <td>{props.userName}</td>
+        <td>{props.email}</td>
         <td>{props.address.street}</td>
         <td>{props.phone}</td>
         <td>{props.website}</td>
