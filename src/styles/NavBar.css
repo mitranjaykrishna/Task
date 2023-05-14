@@ -1,11 +1,32 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+a:link, a:visited{
+    color: #0081C9;
+}
+
+.join{
+    color: white;
+}
 
 .main_nav{
     /* overflow: hidden; */ 
     margin-top: 0px;
     width: 100%;
-    height: 5rem;
-    background: #DFDFDF;
-    box-shadow: 2px 0px 20px 2px #898a8c;
+    height: 5.6em;
+    display: grid;
+    grid-template-columns: 14rem 6fr 6fr 6fr 14rem;
+    background: linear-gradient(0deg, #DFDFDF -95%, rgba(255, 255, 255, 0) 65%);
+    /* box-shadow: 10px 40px 130px -8px #DC2C1D; */
+    box-shadow: 2px 0px 20px 2px #DFDFDF;
 
 }
 
@@ -22,8 +43,36 @@
 .logo{
     display: flex;
     justify-content: center;
+    grid-column: 3/3;
 }
 .logo img{
-    height: 5rem;
+    height: 5.6rem;
+}
+.button1{
+    background: linear-gradient(98.44deg, #F5BA48 52.42%, #EC7609 104.8%, #EC008C 107.37%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 34px;
+}
+.button2{
+    background: linear-gradient(98.44deg, #F54874 52.42%, #EC008C 107.37%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
 }
 
+
+.buttonEffect :hover{
+    color: #1d73dc;
+    text-decoration: underline;
+    transform: scale(0.96);
+    transition: 0.3s ease-in-out;
+}
+
+.buttonEffect :hover{
+    /* color: #DC2C1D; */
+    text-decoration: underline;
+    transform: scale(0.96);
+    transition: 0.3s ease-in-out;
+}
+.CartStyle{
+    visibility: hidden;
+}

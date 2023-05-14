@@ -13,11 +13,14 @@ function Login() {
   const { logIn, googleSignIn, facebookSignIn } = useUserAuth();
   const navigate = useNavigate();
 
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
       await logIn(email, password);
+      
       navigate("/citySelect");
     } catch (err) {
       setError(err.message);
@@ -65,7 +68,7 @@ function Login() {
                   >
                     <Form.Group
                       className="row gy-2 "
-                      style={{ "z-index": "10" }}
+                      style={{ "zIndex": "10" }}
                     >
                       <TextField
                         id="outlined-basic"
@@ -76,7 +79,7 @@ function Login() {
                     </Form.Group>
                     <Form.Group
                       className="row gy-2"
-                      style={{ "z-index": "10" }}
+                      style={{ "zIndex": "10" }}
                     >
                       <TextField
                         id="outlined-basic"
@@ -86,13 +89,13 @@ function Login() {
                         onChange={(e) => setPassword(e.target.value)}
                       />
                     </Form.Group>
-                    <div className="row gy-1" style={{ "z-index": "10" }}>
+                    <div className="row gy-1" style={{ "zIndex": "10" }}>
                       <p className="text-end">Forgot Password?</p>
                     </div>
-                    <div className="row gy-0 d-flex justify-content-centers">
+                    <div className="row gy-0 d-flex justify-content-centers ">
                       <Button
                         variant="contained"
-                        className="buttonClass "
+                        className="buttonClass hover-overlay hover-zoom hover-shadow ripple  "
                         type="submit"
                       >
                         Login
@@ -100,12 +103,12 @@ function Login() {
                     </div>
                   </Form>
 
-                  <div className="row gy-4" style={{ "z-index": "10" }}>
-                    <hr class="mt-0 mb-5" />
+                  <div className="row gy-4" style={{ "zIndex": "10" }}>
+                    <hr className="mt-0 mb-5" />
                   </div>
-                  <div className="row " style={{ "z-index": "10" }}>
-                    <div className="col d-flex justify-content-end">
-                      <Button variant="outlined" className="buttonIcon">
+                  <div className="row " style={{ "zIndex": "10" }}>
+                    <div className="col d-flex justify-content-end ">
+                      <Button variant="outlined" className="buttonIcon hover-overlay hover-zoom hover-shadow ripple  ">
                         <img
                           src="./images/google.png"
                           className="btn appIcon"
@@ -115,7 +118,7 @@ function Login() {
                       </Button>
                     </div>
                     <div className="col d-flex justify-content-start">
-                      <Button variant="outlined" className="buttonIcon">
+                      <Button variant="outlined" className="buttonIcon hover-overlay hover-zoom hover-shadow ripple  ">
                         <img
                           src="./images/facebook.png"
                           className="btn appIcon"
@@ -172,8 +175,8 @@ const Wrapper = styled.section`
   .appIcon {
     z-index: 50;
     color: black;
-    height: 40px;
-    width: 60px;
+    height: 50px;
+    width: 70px;
     border-radius: 100%;
   }
 `;

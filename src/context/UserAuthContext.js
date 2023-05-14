@@ -24,6 +24,7 @@ export function UserAuthContext({children}){
 
         function logIn(email,password){
             console.log("Email ",email);
+            // console.log(auth)
             return signInWithEmailAndPassword(auth,email,password);
         }
 
